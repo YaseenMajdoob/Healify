@@ -1,0 +1,25 @@
+[debug] [2024-05-31T17:13:56.157Z] ----------------------------------------------------------------------
+[debug] [2024-05-31T17:13:56.159Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\YASS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:create
+[debug] [2024-05-31T17:13:56.160Z] CLI Version:   13.10.2
+[debug] [2024-05-31T17:13:56.160Z] Platform:      win32
+[debug] [2024-05-31T17:13:56.160Z] Node Version:  v18.12.0
+[debug] [2024-05-31T17:13:56.162Z] Time:          Fri May 31 2024 18:13:56 GMT+0100 (heure normale d’Afrique de l’Ouest)
+[debug] [2024-05-31T17:13:56.162Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-31T17:13:56.170Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-31T17:13:56.171Z] > authorizing via signed-in user (yessinemejdoub7@gmail.com)
+[debug] [2024-05-31T17:14:12.556Z] > refreshing access token with scopes: []
+[debug] [2024-05-31T17:14:12.559Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-05-31T17:14:12.559Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-31T17:14:12.930Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-05-31T17:14:12.930Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-31T17:14:12.931Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-05-31T17:14:12.931Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"123456789aichatbot","name":"Ai Chat"}
+[debug] [2024-05-31T17:14:13.852Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 401
+[debug] [2024-05-31T17:14:13.852Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.CreateProject","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2024-05-31T17:14:14.150Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\YASS\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\YASS\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
