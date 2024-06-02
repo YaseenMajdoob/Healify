@@ -1,5 +1,3 @@
-## !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-## This app is not completed yet, I didn't set up the specialists\doctors fonctionnalities yet, the code is not clean and I haven't made many tests
 
 ## Prerequisites
 
@@ -55,3 +53,6 @@ The Chat GPT Clone app utilizes the following technologies:
 -   **Expo**: A framework and platform for universal React applications.
 -   **Firebase**: A backend-as-a-service platform for building web and mobile apps.
 -   **Gemini Pro**: A state-of-the-art language model developed by Google.
+
+## !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+## This app is not completed yet, I didn't set up the specialists\doctors fonctionnalities yet, the code is not clean and I haven't made many tests
